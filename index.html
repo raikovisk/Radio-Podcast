@@ -13,10 +13,10 @@
 <body>
     <div class="container">
         <div id="top">
-            <h1 id="titulo">Rádio Podcast!</h1>
+            <h1 id="title">Rádio Podcast!</h1>
         </div>
-        <div id="middle">
-            <p id="subtitulo">Sintonize nos melhores Podcasts!</p>
+        <div class="middle">
+            <p id="subtitle">Sintonize nos melhores Podcasts!</p>
             <!-- <div>
                 <input 
                 disabled 
@@ -26,29 +26,27 @@
                 type="text"
                 />
             </div> -->
-            <p id="resultado">.</p>
+            <p id="result"><-></p>
             <div>
                 <input 
                 min="88.5" 
                 max="100" 
                 step="0.1" 
                 value="94.3" 
-                id="RangeFrequence" 
+                id="RangeFrequence"
+                class="slider" 
                 type="range" 
                 list="tickmarks"
-                list="markers"
                 />
                 <datalist id="markers">
-                    <option value="92"></option>
-                    <option value="94.3"></option>
-                    <option value="98"></option>
+                    <option value="92" label="92">
+                    <option value="94.3" label="94.3">
+                    <option value="98" label="98">
                 </datalist>
             </div>
-            <div id="divPodcast">
-                
-            </div>
         </div>
-        <div id="botton">
+        <div class="botton">
+            <div id="divPodcast"></div>
         </div>
     </div>
 </body>

@@ -6,7 +6,7 @@ window.addEventListener('load', () =>{
 var inputCurrent = document.querySelector('#InputCurrent');
 var rangeFrequence = document.querySelector('#RangeFrequence');
 var divPodcast = document.querySelector('#divPodcast');
-var resultado = document.querySelector('#resultado');
+var resultado = document.querySelector('#result');
 
 
 function start(){
@@ -43,7 +43,11 @@ function findPodcast(frequency){
     if (foundPodcast){
         renderPodcast(currentPodcast);
     }else{
-        divPodcast.innerHTML = '<p id="descriptionPodcast"> Nenhum Podcast encontrado! </p>'
+        divPodcast.innerHTML = `
+            <div class="card">
+                <p id="descriptionPodcast"> Nenhum Podcast encontrado! </p>
+            </div>
+        `
     }
 }
 
@@ -63,21 +67,6 @@ function renderPodcast(podcast){
         `
         divPodcast.innerHTML = PodcastHTML;
     }
-    // var img = document.createElement('img');
-    // img.src = './img/'+ podcast.img;
-    // img.classList.add('PodcastImg')
-
-    // var title = document.createElement('h2');
-    // title.textContent = podcast.title;
-    // title.id = 'tituloPodcast';
-
-    // var description = document.createElement('p');
-    // description.textContent = podcast.description;
-    // description.id = 'descriptionPodcast';
-
-    // divPodcast.appendChild(img);
-    // divPodcast.appendChild(title);
-    // divPodcast.appendChild(description);
     
 }
 
