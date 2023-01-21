@@ -1,0 +1,139 @@
+*{
+    /* RESETANDO CSS */
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    font-family: 'Aldrich', sans-serif;
+}
+
+html, body{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background-color: rgb(45, 34, 53);
+    color: rgb(255, 255, 255);
+}
+
+.container{
+    /* border: solid rgb(255, 2, 2); */
+    padding: 4em;
+
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    text-align: center;
+}
+
+#titulo{
+    font-size: 18em;
+}
+
+#middle{
+    /* border: solid rgb(21, 1, 133); */
+    margin-top: 5rem;
+    
+    max-height: fit-content;
+    max-width: fit-content;
+ 
+}
+
+#middle, input{
+    width: 60vw;
+
+    text-align: center;
+}
+
+#InputCurrent{
+    font-size: 14em;
+    font-weight: 600;
+    border-radius: 15px;
+    background-color: aliceblue;
+    color: rgb(2, 2, 2);
+}
+
+#descriptionPodcast{
+    font-size: 3vh;
+}
+
+#subtitulo{
+    font-size: 4vh;
+}
+
+#RangeFrequence {
+    margin: 8em;
+
+    cursor: pointer;
+    
+    appearance: none;
+    background: #d3d3d3;
+    outline: none;
+    border-radius: 9px;
+}
+
+datalist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* writing-mode: vertical-lr; */
+    width: 200px;
+}
+
+option {
+    padding: 0;
+}
+ 
+#markers{
+    color: white;
+}
+
+#resultado{ 
+    font-size: 3vh;
+    width: 8vw;
+    height: 8vh;
+
+    border-radius: 100px;
+    background-color: hsla(261, 97%, 46%, 0.78);
+
+    margin: 0 auto;
+}
+
+.estilo::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+
+    background: #2796ee;
+    cursor: pointer;
+}
+
+.estilo::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+
+    background: #2796ee;
+    cursor: pointer;
+}
+
+.card{
+    background-color: rgba(118, 0, 173, 0.342);
+    border-radius: 5%;
+}
+
+.card #PodcastImg{
+    width: 40vh;
+    
+    border-radius: 50%;
+}
+
+.card #tituloPodcast{
+    font-size: 6vh;
+    
+}
